@@ -173,8 +173,9 @@ main ul li a {
 		display: none;
 	}
 
-	main ul{
+	main ul {
 		flex-direction: column;
+		flex-wrap: wrap;
 	}
 
 	#formContainer {
