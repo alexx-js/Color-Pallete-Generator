@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Generador de paletas de Colores</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <img src="img/colors.png" alt="logo">
+                <span>Colors</span>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#formContainer" class="a">
+                        <span>Pallete</span> 
+                        <span>Generator</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/alexx-js" class="button">Follow</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <h2>Genera <span>increibles</span> paletas de colores</h2>
+            <p>¿Buscas una paleta de colores para tu pagina web? Usa nuestra herramienta.</p>
+            <ul>
+                <li>
+                    <a href="#formContainer" class="button">Iniciar ahora</a>
+                </li>
+                <li>
+                    <a href="https://github.com/alexx-js" class="a">Conocer mas</a>
+                </li>
+            </ul>
+    </main>
+    <section id="formContainer">
+        <form>
+            <label for="hex">Ingrese un código hexadecimal:</label>
+                <input type="text" id="hex" placeholder="#FFFFFF" maxlength="7" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
+            <button type="submit" class="button">Generar</button>
+        </form>
+        <div id="colors"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

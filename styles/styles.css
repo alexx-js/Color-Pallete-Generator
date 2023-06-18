@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 32px 200px;
+	font-family: 'Lucida Sans', sans-serif;
+	transition: ease 0.7s;
+}
+
+header {
+	font-size: 25px;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+header h1 {
+	display: flex;
+	align-items: center;
+}
+
+header h1 img {
+	width: 40px;
+}
+
+header nav ul {
+	display: flex;
+	gap: 64px;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+}
+
+.a {
+	display: flex;
+	flex-direction: column;
+}
+
+.a:hover {
+	color: #8c52ff;
+	transition: ease .5s;
+}
+
+.button {
+	padding: 16px 32px;
+	background-color: #8c52ff;
+	border-radius: 8px;	
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.button:hover {
+	opacity: 90%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	font-size: x-large;
+	text-align: center;
+	height: 80vh;
+}
+
+main h2 span{
+	color: #ff66c4;
+}
+
+main ul {
+	display: flex;
+	align-items: end;
+	gap: 32px;
+}
+
+main ul li {
+	list-style: none;
+}
+
+main ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+#formContainer {
+	margin: 64px 0 156px 0;
+	display: flex;
+	align-items: center;
+	height: 60vh;
+	font-size: larger;	
+}
+
+#formContainer form {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+#formContainer form label {
+	text-align: center;
+}
+
+#formContainer form input {
+	width: 68%;
+	padding: 16px 32px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#formContainer form button {
+	width: 85%;
+	font-size: medium;
+}
+
+#colors {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.color-box {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.color-code {
+	padding: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.color-code span {
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 985px) {
+	body {
+	margin: 16px 32px;
+	}
+
+	header nav{
+		justify-content: center;
+	}
+
+	header nav ul {
+		display: none;
+	}
+
+	main {
+
+	}
+
+	#formContainer {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	#formContainer form {
+		width: 100%;
+	}
+
+	#colors {
+		width: 100%;
+	}
+
+}
