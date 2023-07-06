@@ -180,7 +180,7 @@ main ul li a {
 
 	#formContainer {
 		flex-direction: column;
-		gap: 16px;
+		justify-content:center;
 	}
 
 	#formContainer form {
